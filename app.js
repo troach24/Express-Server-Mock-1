@@ -8,8 +8,8 @@ app.use(cors());
 
 app.get('/', (req, res) => {
   res.json({
-    cohorts: data
-  })
+    data: data
+  });
 });
 
 app.get('/:id', (req, res) => {
@@ -17,13 +17,13 @@ app.get('/:id', (req, res) => {
   if (!id) {
     res.status(404).json({
       error: "Cohort does not exist at this id"
-    })
+    });
   } else {
     res.json({
-      cohort: id
-    })
+      data: id
+    });
   }
-})
+});
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
@@ -33,7 +33,7 @@ function getDataById(data, id) {
   for(let i=0; i < data.length; i++) {
     if (data[i].id == id) {
       return data[i]
-    }
-  }
+    };
+  };
   return null
-}
+};

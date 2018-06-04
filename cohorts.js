@@ -21,13 +21,4 @@ module.exports =
     cohortCode: "g110",
     numberOfStudents: 29
   },
-]
-
-function getDataById(data, id) {
-  for(let i=0; i < data.length; i++) {
-    if (data[i].id == id) {
-      return data[i]
-    }
-  }
-  return null
-}
+];

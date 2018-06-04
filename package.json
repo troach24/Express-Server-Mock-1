@@ -20,6 +20,7 @@
   "homepage": "https://github.com/troach24/Express-Server-Mock-1#readme",
   "dependencies": {
     "cors": "^2.8.4",
+    "eslint": "^4.19.1",
     "express": "^4.16.3"
   }
 }
