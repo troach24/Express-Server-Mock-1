@@ -52,4 +52,4 @@ Your returned error should look like this:
     }
 }
 ```
-Submit your deployed server [here](https://express-app-1.herokuapp.com/1)
+Submit your deployed server [here](https://express-app-1.herokuapp.com/)
